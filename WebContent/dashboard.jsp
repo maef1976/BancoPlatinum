@@ -16,13 +16,13 @@
     />
 </head>
 <body>
-	<section class="hero is-primary is-fullheight">
+	<section class="hero is-link is-fullheight">
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<div class="columns is-multiline is-centered">
 					<div class="column is-12">
-						<h1 class="title">Bienvenido Banco Platinum
-							Marcelo Alberto Espinoza Flores </h1>
+						<h1 class="title">Bienvenido al Banco Platinum 
+							${sessionScope.persona.nombre}  ${sessionScope.persona.apellido} </h1>
 					</div>
 					<div class="column is-4">
 						<div class="box">
@@ -31,29 +31,29 @@
 								<tbody>
 									<tr>
 										<td>Rut</td>
-										<td>13042217-9</td>
+										<td>${sessionScope.persona.rut}</td>
 									</tr>
 									<tr>
 										<td>Nombre</td>
-										<td>Marcelo</td>
+										<td>${sessionScope.persona.nombre}</td>
 									</tr>
 									<tr>
 										<td>Apellido</td>
-										<td>Espinoza</td>
+										<td>${sessionScope.persona.apellido}</td>
 									</tr>
 									<tr>
 										<td>Telefono</td>
-										<td>977777777</td>
+										<td>${sessionScope.persona.telefono}</td>
 									</tr>
 									<tr>
 										<td>Fecha Ingreso</td>
-										<td>08/02/1976</td>
+										<td>${sessionScope.persona.fechaIngreso}</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 						
-						<div class="container"> <a class="button" > Transferencia</a></div>
+						<div class="container"> <a class="button" > Realizar transferencia</a></div>
 					</div>
 				</div>
 			</div>

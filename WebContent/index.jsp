@@ -28,7 +28,7 @@ prefix="c"%>
                       id="username"
                       name="username"
                       type="text"
-                      placeholder="Nombre Usuario"
+                      placeholder="Nombre usuario"
                       class="input"
                     />
                     <span class="icon is-small is-left">
@@ -58,6 +58,11 @@ prefix="c"%>
                   </button>
                 </div>
               </form>
+
+              <c:set var="mensaje" value="${requestScope.mensaje}" />
+              <c:if test="${not empty mensaje}">
+                <div class="notification is-danger">${mensaje}</div>
+              </c:if>
             </div>
           </div>
         </div>

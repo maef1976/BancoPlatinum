@@ -19,11 +19,11 @@ prefix="c"%>
     <section class="hero is-link is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Transferencia</h1>
-          <div class="container">
+          <h1 class="title">Transferencia Banco Platinum</h1>
+          <div class="container box">
            <c:if test="${not empty sessionScope.persona}">
-	            <h1>Nombre de usuario: Marcelo Espinoza Flores</h1>
-	            <h1>Rut de usuario: 13.042.217-9</h1>
+	            <h1>Nombre de usuario: ${sessionScope.persona.nombre}</h1>
+	            <h1>Rut de usuario: ${sessionScope.persona.rut}</h1>
            </c:if>
           </div>
           <div class="columns is-multiline is-centered">
@@ -50,29 +50,29 @@ prefix="c"%>
                       <select name="tipo_cuenta">
                         <option value="cuenta_corriente">Corriente</option>
                         <option value="cuenta_vista">Cuenta Vista</option>
-						<option value="cuenta_vista">Cuenta Ahorro</option>
+                        <option value="cuenta_vista">Cuenta de Ahorro</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="field">
-                  <label class="label">Banco</label>
+                  <label class="label">Seleccione Banco</label>
                   <div class="control">
                     <div class="select">
                       <select name="tipo_banco">
-                        <option value="banco_platinum">Banco Chile</option>
+                        <option value="banco_estado">Banco Estado</option>
                         <option value="banco_santander">Banco Santander</option>
-						<option value="banco_santander">Banco Estado</option>
-						<option value="banco_santander">Banco BCI</option>
+                        <option value="banco_chile">Banco Chile</option>
+                        <option value="banco_bci">Banco BCI</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="field">
-                  <label class="label">Monto de transferencia</label>
-                  <input class="input" type="text" name="Transferencia" />
+                  <label class="label">Monto de Transferencia</label>
+                  <input class="input" type="text" name="monto_transferencia" />
                 </div>
-                <button type="submit" class="button is-primary">Guardar transferencia</button>
+                <button type="submit" class="button is-primary">Realizar Transferencia</button>
                 </form>
               </div>
             </div>
