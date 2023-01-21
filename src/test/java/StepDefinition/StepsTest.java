@@ -21,7 +21,7 @@ public class StepsTest {
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--no-sandbox");
 		driver = new ChromeDriver(options);
-		driver.get("http://localhost:8181/BancoPlatinumLogin/");
+		driver.get("http://localhost:8181/BancoLoginJSP");
 		driver.manage().window().maximize();
 	}
 
