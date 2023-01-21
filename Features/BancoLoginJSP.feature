@@ -2,7 +2,7 @@ Feature: Realizacion de casos ingresando nombre de usuario y contraseña
 
   Scenario: Ingresar nombre de usuario y contraseña correctos.
     Given Abrir Chrome
-    When el usuario ingresa Username "vikruzdavid" y Password "12345" correctos.
+    When el usuario ingresa Username "marcelo" y Password "12345" correctos.
     Then Entonces se le da la bienvenida al sitio "dashboard"
 		And Cierra el navegador
 		

@@ -16,12 +16,12 @@ public class StepsTest {
 
 	@Given("Abrir Chrome")
 	public void abrir_Chrome() {
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--no-sandbox");
 		driver = new ChromeDriver(options);
-		driver.get("http://localhost:8080/BancoLoginJSP/");
+		driver.get("http://localhost:8181/BancoPlatinumLogin/");
 		driver.manage().window().maximize();
 	}
 
